@@ -8,6 +8,8 @@
     "format:check": "prettier . --check",
     "lint": "eslint",
     "lint:fix": "eslint . --fix",
+    "docker:build": "docker build -t ci-demo .",
+    "docker:run": "docker run -p 3000:3000 --init --rm ci-demo",
     "start": "node server.js",
     "test": "jest"
   },
